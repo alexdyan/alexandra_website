@@ -1,9 +1,10 @@
-import React from 'react';
+import React, {useRef, useEffect} from 'react';
 import './App.css';
 import Theme from './Theme';
 import Home from './Home';
 import About from './About';
 import ProjectList from './ProjectList';
+import styled from 'styled-components';
 import {
   BrowserRouter as Router,
   Route,
@@ -13,8 +14,12 @@ import {
 
 
 function App() {
+  const ref = useRef()
+  useEffect(() => {
+    console.log(ref.current.getBoundingClientRect().height);
+  })
   return (
-      <div className="App">
+      <div ref={ref}className="App">
         <Theme>
           <Router>
             <Switch>
