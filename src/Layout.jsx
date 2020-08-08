@@ -13,7 +13,7 @@ const Container = styled.div `
 
 const Children = styled.div `
     width: 100%;
-    min-height: 80vh;
+    min-height: 82vh;
 `
 
 const Footer = styled.footer `

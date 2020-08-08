@@ -6,7 +6,7 @@ import homeIcon from './images/home.svg';
 
 const Container = styled.nav `
     width: 100%;
-    height: 10vh;
+    height: 8vh;
     /* red to dark red gradient */
     background: linear-gradient(135deg, rgba(255,110,110,1) 0%, rgba(255,65,65,1) 50%, rgba(255,24,24,1) 100%);
     display: flex;
