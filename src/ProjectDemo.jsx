@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import Layout from './Layout';
 
 const Container = styled.div `
     width: 100%;
@@ -23,14 +22,12 @@ const Media = styled.div `
 function ProjectDemo({name, description, children}) {
 
     return (
-        <Layout>
-            <Container className='ProjectDemo'>
-                <h1>{name}</h1>
-                
-                <Media>{children}</Media>
-                <p>{description}</p>
-            </Container>
-        </Layout>
+        <Container className='ProjectDemo'>
+            <h1>{name}</h1>
+            
+            <Media>{children}</Media>
+            <p>{description}</p>
+        </Container>
     )
 }
 

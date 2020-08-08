@@ -1,7 +1,6 @@
 import React from 'react';
 import { useRouteMatch, Switch, Route } from 'react-router-dom';
 import styled from 'styled-components';
-import Layout from './Layout';
 import ProjectItem from './ProjectItem';
 import ProjectDemo from './ProjectDemo';
 import projectsJSON from './projects';
@@ -60,20 +59,18 @@ function ProjectList() {
         <Switch>
             {/* this saves the existing path so you can add the next extension for each project to the url */}
             <Route exact path={`${match.path}`}>
-                <Layout>
-                    <Container className='ProjectList'>
-                        <h1>Projects</h1>
-                        <GridContainer>
-                            <ProjectItem name='Sound Garden' baseUrl={match.path} imageSrc={soundGardenImg} />
-                            <ProjectItem name='Quarantine Quiz' baseUrl={match.path} imageSrc={quarantineQuizImg} />
-                            <ProjectItem name="D'Lay Plug-In" baseUrl={match.path} youtubeId='k9tQWE3TW9U' />
-                            <ProjectItem name='Sound Design' baseUrl={match.path} imageSrc={pepsiImg} />
-                            <ProjectItem name='BlackBox' baseUrl={match.path} imageSrc={blackBoxImg} />
-                            <ProjectItem name='Radio Dramas' baseUrl={match.path} imageSrc={titsImg} />
-                            <ProjectItem name='Drum Pad Visualizer' baseUrl={match.path} youtubeId='-hEwV0057xE' />
-                        </GridContainer>
-                    </Container>
-                </Layout>
+                <Container className='ProjectList'>
+                    <h1>Projects</h1>
+                    <GridContainer>
+                        <ProjectItem name='Sound Garden' baseUrl={match.path} imageSrc={soundGardenImg} />
+                        <ProjectItem name='Quarantine Quiz' baseUrl={match.path} imageSrc={quarantineQuizImg} />
+                        <ProjectItem name="D'Lay Plug-In" baseUrl={match.path} youtubeId='k9tQWE3TW9U' />
+                        <ProjectItem name='Sound Design' baseUrl={match.path} imageSrc={pepsiImg} />
+                        <ProjectItem name='BlackBox' baseUrl={match.path} imageSrc={blackBoxImg} />
+                        <ProjectItem name='Radio Dramas' baseUrl={match.path} imageSrc={titsImg} />
+                        <ProjectItem name='Drum Pad Visualizer' baseUrl={match.path} youtubeId='-hEwV0057xE' />
+                    </GridContainer>
+                </Container>
             </Route>
 
         {/* *************************Sound Garden************************* */}

@@ -1,4 +1,4 @@
-import React, {useRef, useEffect} from 'react';
+import React, {useRef, useEffect, useState} from 'react';
 import './App.css';
 import Theme from './Theme';
 import Home from './Home';
@@ -11,6 +11,7 @@ import {
   Switch,
   Redirect
 } from "react-router-dom";
+import Layout from './Layout';
 
 
 function App() {
@@ -18,8 +19,9 @@ function App() {
   useEffect(() => {
     console.log(ref.current.getBoundingClientRect().height);
   })
+
   return (
-      <div ref={ref}className="App">
+      <div ref={ref} className='App'>
         <Theme>
           <Router>
             <Switch>
@@ -30,17 +32,21 @@ function App() {
                 <Home />
               </Route>
             </Switch>
-
+            
             <Switch>
               <Route path='/about'>
-                <About />
+                <Layout>
+                  <About />
+                </Layout>
               </Route>
             </Switch>
-
+ 
             <Switch>
               <Route path='/projects'>
+                <Layout>
                   <ProjectList />
-                </Route>
+                </Layout>
+              </Route>
             </Switch>
           </Router>
         </Theme>

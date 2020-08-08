@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import Layout from './Layout';
 import instagram from './images/instagram.svg';
 import linkedin from './images/linkedin.svg';
 
@@ -51,7 +50,6 @@ const SocialMediaButton = styled.a `
 function About() {
 
     return (
-        <Layout>
             <Container className='About'>
                 <h1>About</h1>
                 <p>
@@ -65,7 +63,6 @@ function About() {
                     <SocialMediaButton icon={linkedin} href='https://www.linkedin.com/in/alexandra-dyan/'>LinkedIn</SocialMediaButton>
                 </div>
             </Container>
-        </Layout>
     )
 }
 

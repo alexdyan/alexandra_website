@@ -1,7 +1,8 @@
-import React from 'react';
+import React, {useState} from 'react';
 import styled from 'styled-components';
 import Header from './Header';
 
+const blurAmount = `${10}px`
 
 const Container = styled.div `
     width: 100%;
@@ -14,6 +15,10 @@ const Container = styled.div `
 const Children = styled.div `
     width: 100%;
     min-height: 82vh;
+    filter: ${props => props.blurred ? `blur(${blurAmount})` : 'none'};
+    filter: ${props => props.blurred ? `url("blur.svg#gaussian_blur")` : 'none'};
+    -webkit-filter: ${props => props.blurred ? `blur(${blurAmount})` : 'none'};
+    transition: .3s linear;
 `
 
 const Footer = styled.footer `
@@ -30,12 +35,23 @@ const Footer = styled.footer `
     color: ${props => props.theme.colors.lightGray};
 `
 
+const ClickShield = styled.div`
+    z-index: 50;
+    width: 100vw;
+    height: 1000vh;
+    background: none;
+    position: absolute;
+`
+
 function Layout({children}) {
+    const [blurred, setBlurred] = useState(false);
 
     return (
         <Container className='Layout'>
-                <Header />
-                <Children>{children}</Children>
+                {/* <BlurMask className="BlurMask"/> */}
+                {blurred && <ClickShield />}
+                <Header setBlurred={setBlurred} />
+                <Children blurred={blurred}>{children}</Children>
             <Footer>
             <p>Contact:<br></br>
                 ady239@nyu.edu | (973)-735-3093</p>

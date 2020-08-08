@@ -1,6 +1,7 @@
 import React from 'react';
 import {Link as RouterLink} from 'react-router-dom';
 import styled from 'styled-components';
+import SideCanvas from './SideCanvas';
 
 const Container = styled.div `   
     overflow: hidden;
@@ -46,12 +47,13 @@ function Home() {
 
     return(
         <Container className='Home'>
+            {/* <SideCanvas /> */}
             <h1>Alexandra D'Yan</h1>
             <LinkContainer>
                 <Link to='/projects'>Projects</Link>
                 <Link to='/about'>About</Link>
             </LinkContainer>
-
+            
         </Container>
     )
 
