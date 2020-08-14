@@ -23,7 +23,7 @@ function App() {
   return (
       <div ref={ref} className='App'>
         <Theme>
-          <Router baseName='/alexandra_website'>
+          <Router>
             <Switch>
               <Route exact path="/">
                 <Redirect to="/home" /> 
