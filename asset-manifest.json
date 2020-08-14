@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/alexandra_website/static/css/main.220e526c.chunk.css",
+    "main.js": "/alexandra_website/static/js/main.80f43438.chunk.js",
+    "main.js.map": "/alexandra_website/static/js/main.80f43438.chunk.js.map",
+    "runtime-main.js": "/alexandra_website/static/js/runtime-main.692275fd.js",
+    "runtime-main.js.map": "/alexandra_website/static/js/runtime-main.692275fd.js.map",
+    "static/js/2.2239d146.chunk.js": "/alexandra_website/static/js/2.2239d146.chunk.js",
+    "static/js/2.2239d146.chunk.js.map": "/alexandra_website/static/js/2.2239d146.chunk.js.map",
+    "index.html": "/alexandra_website/index.html",
+    "precache-manifest.59e3721b69359ccfb5971fa295b38d73.js": "/alexandra_website/precache-manifest.59e3721b69359ccfb5971fa295b38d73.js",
+    "service-worker.js": "/alexandra_website/service-worker.js",
+    "static/css/main.220e526c.chunk.css.map": "/alexandra_website/static/css/main.220e526c.chunk.css.map",
+    "static/js/2.2239d146.chunk.js.LICENSE.txt": "/alexandra_website/static/js/2.2239d146.chunk.js.LICENSE.txt",
+    "static/media/Orbsleep_Alexandra.mp4": "/alexandra_website/static/media/Orbsleep_Alexandra.05860fc3.mp4",
+    "static/media/Pepsipaint_Alexandra.mp4": "/alexandra_website/static/media/Pepsipaint_Alexandra.3c4888fd.mp4",
+    "static/media/App.css": "/alexandra_website/static/media/Raleway-VariableFont_wght.3b5635ac.ttf",
+    "static/media/blackbox.JPG": "/alexandra_website/static/media/blackbox.8e599a11.JPG",
+    "static/media/home.svg": "/alexandra_website/static/media/home.f47ebdde.svg",
+    "static/media/instagram.svg": "/alexandra_website/static/media/instagram.b78dbd66.svg",
+    "static/media/linkedin.svg": "/alexandra_website/static/media/linkedin.3049877d.svg",
+    "static/media/orbThumbNail.JPG": "/alexandra_website/static/media/orbThumbNail.de267355.JPG",
+    "static/media/pepsiThumbNail.JPG": "/alexandra_website/static/media/pepsiThumbNail.2dd814d2.JPG",
+    "static/media/quarantine.png": "/alexandra_website/static/media/quarantine.be809f77.png",
+    "static/media/quarantine2.JPG": "/alexandra_website/static/media/quarantine2.cc093877.JPG",
+    "static/media/soundGarden.JPG": "/alexandra_website/static/media/soundGarden.8adf451d.JPG",
+    "static/media/tits.mp3": "/alexandra_website/static/media/tits.5cabf9ba.mp3",
+    "static/media/tits.jpg": "/alexandra_website/static/media/tits.f1a77d17.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.692275fd.js",
+    "static/js/2.2239d146.chunk.js",
+    "static/css/main.220e526c.chunk.css",
+    "static/js/main.80f43438.chunk.js"
+  ]
+}
