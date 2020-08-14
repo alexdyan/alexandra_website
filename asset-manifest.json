@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/alexandra_website/static/css/main.220e526c.chunk.css",
-    "main.js": "/alexandra_website/static/js/main.80f43438.chunk.js",
-    "main.js.map": "/alexandra_website/static/js/main.80f43438.chunk.js.map",
+    "main.js": "/alexandra_website/static/js/main.7d5b2a1f.chunk.js",
+    "main.js.map": "/alexandra_website/static/js/main.7d5b2a1f.chunk.js.map",
     "runtime-main.js": "/alexandra_website/static/js/runtime-main.692275fd.js",
     "runtime-main.js.map": "/alexandra_website/static/js/runtime-main.692275fd.js.map",
     "static/js/2.2239d146.chunk.js": "/alexandra_website/static/js/2.2239d146.chunk.js",
     "static/js/2.2239d146.chunk.js.map": "/alexandra_website/static/js/2.2239d146.chunk.js.map",
     "index.html": "/alexandra_website/index.html",
-    "precache-manifest.59e3721b69359ccfb5971fa295b38d73.js": "/alexandra_website/precache-manifest.59e3721b69359ccfb5971fa295b38d73.js",
+    "precache-manifest.10eac72a3a4487e9b6583cc3a8a0d75e.js": "/alexandra_website/precache-manifest.10eac72a3a4487e9b6583cc3a8a0d75e.js",
     "service-worker.js": "/alexandra_website/service-worker.js",
     "static/css/main.220e526c.chunk.css.map": "/alexandra_website/static/css/main.220e526c.chunk.css.map",
     "static/js/2.2239d146.chunk.js.LICENSE.txt": "/alexandra_website/static/js/2.2239d146.chunk.js.LICENSE.txt",
@@ -31,6 +31,6 @@
     "static/js/runtime-main.692275fd.js",
     "static/js/2.2239d146.chunk.js",
     "static/css/main.220e526c.chunk.css",
-    "static/js/main.80f43438.chunk.js"
+    "static/js/main.7d5b2a1f.chunk.js"
   ]
 }
