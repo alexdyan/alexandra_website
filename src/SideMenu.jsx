@@ -11,28 +11,19 @@ const slideIn = keyframes`
 `
 
 const Container = styled.div `
-    width: 40%;
+    width: 40vh;
+    right: 0;
     height: 100vh;
     position: fixed;
     top: 8vh; /* directly below the header */
     z-index: 100;
-    transition: linear .2s;
+    transform: ${props =>  props.visible ? 'none' : 'translate3d(20vh, 0, 0)' };
+    transition: .3s linear;
 `
 
-// const CloseIcon = styled.svg`
-//     width: 24px;
-//     height: 24px;
-//     padding: 5%;
-//     cursor: pointer;
-// `
-
-function SideMenu({visible, onClosePressed, children, className}) {
+function SideMenu({visible = false, onClosePressed, children, className}) {
     const ref = useRef();
-    const [width, setWidth] = useState(0);
-
     useEffect(() => {
-        const {width} = ref.current.getBoundingClientRect()
-        setWidth(width)
         
         function handleClickOutside(event) {
             if (ref.current && !ref.current.contains(event.target)) {
@@ -50,11 +41,11 @@ function SideMenu({visible, onClosePressed, children, className}) {
     }, [ref])
     
     return (
-        <Container className={`${className}`} ref={ref} style={{right: (visible ? 0 : -width)}} >
-            {/* <CloseIcon viewBox={[0, 0, 100, 100]} onClick={onClosePressed}>
-                <line x1='0' y1='0' x2='100' y2='100' stroke="white" strokeWidth='8'></line>
-                <line x1='100' y1='0' x2='0' y2='100' stroke='white' strokeWidth='8'></line>
-            </CloseIcon> */}
+        <Container 
+            className={`${className}`} 
+            ref={ref} 
+            visible={visible}
+        >
             {children}
         </Container>
     )

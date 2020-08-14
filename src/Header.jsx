@@ -49,23 +49,20 @@ const Link = styled(RouterLink) `
     
 `
 
-function Header({setBlurred}) {
-    const [visible, setVisible] = useState(false);
+function Header({menuVisible, setMenuVisible}) {
 
     const onClick = () => {
-        setVisible(!visible);
-        setBlurred(true);
+        setMenuVisible(!menuVisible);
     }
     const onClosePressed = () => {
-        setVisible(false);
-        setBlurred(false);
+        setMenuVisible(false);
     }
 
     return (
         <Container className='Header'>
             <HomeIcon to='/home'></HomeIcon>
             <MenuIcon onClick={onClick} style={{width: '32px', height: '25px', margin: 'auto 5%', cursor: 'pointer'}}></MenuIcon>
-            <StyledMenu visible={visible} onClosePressed={onClosePressed}>
+            <StyledMenu visible={menuVisible} onClosePressed={onClosePressed}>
                 <Link to='/projects' onClick={onClosePressed}>Projects</Link>
                 <Link to='/home' onClick={onClosePressed}>Home</Link>
                 <Link to='/about' onClick={onClosePressed}>About</Link>

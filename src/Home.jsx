@@ -7,7 +7,7 @@ const Container = styled.div `
     width: 100%;
     height: 100%;
 
-    @media only screen and (min-width: 760px) {
+    @media only screen and (min-width: 660px) {
         display: flex;
         flex-direction: row;
     }
@@ -30,7 +30,7 @@ const Content = styled.div `
         color: ${props => props.theme.colors.lightGray};
     }
 
-    @media only screen and (min-width: 760px) {
+    @media only screen and (min-width: 660px) {
         width: 75%;
         h1 { margin-right: 20%; }
     }
@@ -41,10 +41,14 @@ const LinkContainer = styled.div `
     display: flex;
     flex-direction: column;
 
-    @media only screen and (min-width: 760px) {
+    @media only screen and (min-width: 660px) {
         margin-top: 10%;
-        flex-direction: row;
-        justify-content: space-around;
+        margin-right: 20%;
+        text-align: right;
+        display: block;
+    }
+    @media (orientation:landscape) {
+        margin-top: 0;
     }
 `
 
@@ -53,7 +57,7 @@ const Link = styled(RouterLink) `
     padding: 5%;
     text-decoration: none;
     outline: none;
-    font-size: 2em;
+    font-size: 1.5em;
     color: ${props => props.theme.colors.lightGray};
     border: 1px solid ${props => props.theme.colors.lightGray};
     background: ${props => props.theme.colors.pink};
@@ -62,16 +66,20 @@ const Link = styled(RouterLink) `
         color: ${props => props.theme.colors.red};
     }
 
-    @media only screen and (min-width: 760px) {
-        margin: 0 2% 0 2%;
+    @media only screen and (min-width: 660px) {
+        margin: 0;
+        padding: 5% 0 0 0;
+        font-size: 2em;
         border: none;
         background: none;
+        display: inline-block;
+        /* cool moving underline css */
         &&::after {
-            display: block;
             position: relative;
             content: "";
             background: ${props => props.theme.colors.lightPink};
             height: 2px;
+            display: block;
             width: 100%;
             transform: scaleX(0);
             visibility: hidden;
@@ -96,6 +104,7 @@ function Home() {
                 <h1>Alexandra<br/>D'Yan</h1>
                 <LinkContainer>
                     <Link to='/projects'>Projects</Link>
+                    <br />
                     <Link to='/about'>About</Link>
                 </LinkContainer>
             </Content>

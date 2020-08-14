@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import styled from 'styled-components';
 import Header from './Header';
 
@@ -30,7 +30,6 @@ const Footer = styled.footer `
     flex-direction: column;
     justify-content: space-around;
     background: ${props => props.theme.colors.darkGray};
-    /* background: linear-gradient(135deg, rgba(255,147,147,1) 0%, rgba(255,110,110,1) 50%, rgba(255,65,65,1) 100%); */
     text-align: center;
     color: ${props => props.theme.colors.lightGray};
 `
@@ -38,20 +37,26 @@ const Footer = styled.footer `
 const ClickShield = styled.div`
     z-index: 50;
     width: 100vw;
-    height: 1000vh;
+    height: 100vh;
     background: none;
     position: absolute;
 `
 
 function Layout({children}) {
-    const [blurred, setBlurred] = useState(false);
+    const [menuVisible, setMenuVisible] = useState(false)
+    
+    useEffect(() => {
+        document.addEventListener('scroll', () => {
+            setMenuVisible(false)
+        })
+    }, [])
 
     return (
         <Container className='Layout'>
                 {/* <BlurMask className="BlurMask"/> */}
-                {blurred && <ClickShield />}
-                <Header setBlurred={setBlurred} />
-                <Children blurred={blurred}>{children}</Children>
+                {menuVisible && <ClickShield />}
+                <Header menuVisible={menuVisible} setMenuVisible={setMenuVisible} />
+                <Children blurred={menuVisible}>{children}</Children>
             <Footer>
             <p>Contact:<br></br>
                 ady239@nyu.edu | (973)-735-3093</p>

@@ -22,7 +22,7 @@ const Container = styled.div `
         margin-top: 20%;
     }
 
-    @media only screen and (min-width: 760px) {
+    @media only screen and (min-width: 660px) {
         width: 60%;
         min-width: 600px;
         margin: 0 auto;

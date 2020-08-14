@@ -13,7 +13,7 @@ const Container = styled.div `
         height: 100%;
         background: blue;
     }
-    @media only screen and (max-width: 760px) {
+    @media only screen and (max-width: 660px) {
         width: 0;
         height: 0;
     }
@@ -27,7 +27,7 @@ const Glass = styled.div`
     background: hsla(205, 20%, 50%, 10%);
     backdrop-filter: blur(2px);
     z-index: 100;
-    @media only screen and (max-width: 760px) {
+    @media only screen and (max-width: 660px) {
         width: 0;
         height: 0;
     }

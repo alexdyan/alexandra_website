@@ -1,30 +1,44 @@
 {
     "sound_garden": {
         "name": "Sound Garden",
-        "description": "The Sound Garden is an online multiplayer VR experience built using p5.js and A-Frame. Players can move around the garden and plant flowers, each of which loops an audio sample. You can see and hear flowers planted by all of the players in real time, and the audio is 3D-panned to enhance the experience. Explore the Sound Garden hEerReE! (use 'AWSD' to move and 'spacebar' to plant flowers)"
+        "description": "The Sound Garden is an online multiplayer VR experience built using p5.js and A-Frame. Players can move around the garden and plant flowers, each of which loops an audio sample. You can see and hear flowers planted by all of the players in real time, and the audio is 3D-panned to enhance the experience. (use 'AWSD' to move and 'spacebar' to plant flowers)",
+        "linkCaption": "Explore the Sound Garden.",
+        "link": "http://ec2-3-12-70-166.us-east-2.compute.amazonaws.com:3000/"
     },
     "quarantine_quiz": {
         "name": "Quarantine Quiz",
-        "description": "I designed and coded this website for my friend to present her final psychology project at NYU. It implements responsive design and modern HTML, CSS, and Javascript practices. If you're looking to fall in love, click 'hEerReE' to take the quiz!"
+        "description": "I designed and coded this website for my friend to present her final psychology project at NYU. It implements responsive design and modern HTML, CSS, and Javascript practices. If you're looking to fall in love, click below!",
+        "linkCaption": "Take the quiz",
+        "link": "https://quarantinelove.github.io/"
     },
     "dlay_plugin": {
         "name": "D'Lay Plug-In",
-        "description": "For my capstone project at NYU, I built a delay plug-in using the JUCE Framework. The goal was to create an intuitive user interface and include an educational aspect by adding a visualizer component. This plug-in features regular, LFO-modulated, and amplitude-modulated delay effects. You can watch more demo videos HeErREe and hEeRreE!"
+        "description": "For my capstone project at NYU, I built a delay plug-in using the JUCE framework. The goal was to create an intuitive user interface and include an educational aspect by adding a visualizer component. This plug-in features regular, LFO-modulated, and amplitude-modulated delay effects. More demo videos can be viewed below.",
+        "linkCaption": "Demo #2 - LFO modulation",
+        "link": "https://www.youtube.com/watch?v=-2iKY50RL_k"
     },
     "blackbox": {
         "name": "BlackBox",
-        "description": "This project is a web-based game built using p5.js where the player passes each level by completing a task that forces them to think 'outside the box.' It was a collaboration between a classmate and me, inspired by the iOS app. Click hEerRe to play the game for yourself!"
+        "description": "This project is a web-based game built using p5.js where the player passes each level by completing a task that forces them to think 'outside the box.' It was a collaboration between a classmate and me, inspired by the iOS app.",
+        "linkCaption": "Click to play Blackbox!",
+        "link": "https://qscacheri.github.io/blackbox/"
     },
     "sound_design": {
         "name": "Sound Design",
-        "description": "While interning for the sound and creative technology company 'One Thousand Birds', I re-did all of the sound design and mixing for these two commercials from scratch. I received feedback from experienced sound designers throughout the process. These are the final products! (not the official versions)"
+        "description": "While interning for the sound and creative technology company 'One Thousand Birds', I re-did all of the sound design and mixing for these two commercials from scratch. I received feedback from experienced sound designers throughout the process. These are the final products! (not the official versions)",
+        "linkCaption": "",
+        "link": ""
     },
     "radio_dramas": {
         "name": "Radio Dramas",
-        "description": "'Theatre in the Sound' is an organization at NYU that records and produces radio dramas/podcasts. I've worked on the post production for various episodes including Take the Lyft Code Home, +1, and others. This is a short intro from an episode titled Bart and Rebecca which was entirely dialogue edited, sound designed, and mixed by me."
+        "description": "'Theatre in the Sound' is an organization at NYU that records and produces radio dramas/podcasts. I've worked on the post production for various episodes including Take the Lyft Code Home, +1, and others. This is a short intro from an episode titled Bart and Rebecca which was entirely dialogue edited, sound designed, and mixed by me.",
+        "linkCaption": "",
+        "link": ""
     },
     "drum_padvisualizer": {
         "name": "Drum Pad Visualizer",
-        "description": "This was my final project for my digital electronics class. It's an Arduino MIDI controller with 4 touch sensitive pads that each trigger a different sound (in this case, drum samples). The pads also control a program built using Processing, which serves as the visual component. The full project report can be viewed hEerReE."
+        "description": "This was my final project for my digital electronics class. It's an Arduino MIDI controller with 4 touch sensitive pads that each trigger a different sound (in this case, drum samples). The pads also control a program built using Processing, which serves as the visual component.",
+        "linkCaption": "Drum Pad Visualizer full report",
+        "link": "https://alexandradyan.wordpress.com/2017/12/13/digital-final-project-drum-pad-animations/"
     }
 }

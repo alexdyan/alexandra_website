@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import {Link} from 'react-router-dom';
 import styled from 'styled-components';
 
@@ -25,6 +25,21 @@ const Container = styled(Link) `
         padding: 1%;
         border-radius: 5px;
         background: rgba(235, 230, 230, 0.5);
+    }
+
+    @media only screen and (min-width: 660px) {
+        color: transparent;
+        div { background: none; }
+        &:hover {
+            color: white;
+            border: none;
+            div {
+                background: rgba(235, 230, 230, 0.5);
+                transition: .1s linear;
+            }                
+            transition: .1s linear;
+
+        }
     }
 
 `
