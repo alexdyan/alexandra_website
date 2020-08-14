@@ -13,6 +13,12 @@ const Container = styled.div `
         margin: 0 5% 10% 5%;
         line-height: 160%;
     }
+
+    @media only screen and (min-width: 760px) {
+        width: 60%;
+        min-width: 600px;
+        margin: 0 auto;
+    }
 `
 const Media = styled.div `
     text-align: center;

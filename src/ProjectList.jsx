@@ -30,7 +30,7 @@ const Container = styled.div`
         color: ${props => props.theme.colors.darkGray};
     }
 
-    @media only screen and (min-width: 600px) {
+    @media only screen and (min-width: 760px) {
         width: 60%;
         min-width: 600px;
     }

@@ -21,6 +21,12 @@ const Container = styled.div `
     div.gap {
         margin-top: 20%;
     }
+
+    @media only screen and (min-width: 760px) {
+        width: 60%;
+        min-width: 600px;
+        margin: 0 auto;
+    }
 `
 
 const SocialMediaButton = styled.a `
