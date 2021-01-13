@@ -1,7 +1,6 @@
-import React, { useRef, useEffect } from "react"
-import Circle from "./Circle"
+import React, { useEffect, useRef } from "react"
 import styled from "styled-components"
-let p5
+import Circle from "./Circle"
 const Container = styled.div`
   width: 25%;
   height: 100vh;
@@ -44,14 +43,15 @@ const SideCanvas = () => {
     p.colorMode(p.HSB, 360, 100, 100)
 
     for (let i = 0; i < 100; i++) {
-      if (i === 0) var temp = new Circle(p.random(width), p.random(height), p)
-      else var temp = new Circle(p.random(width), p.random(height), p)
+      let temp
+      if (i === 0) temp = new Circle(p.random(width), p.random(height), p)
+      else temp = new Circle(p.random(width), p.random(height), p)
       p.theCircles.push(temp)
     }
   }
 
   /* p5 draw function */
-  const draw = (p, parent) => {
+  const draw = p => {
     p.background(0, 0, 100)
 
     for (var i = 0; i < 50; i++) {
@@ -61,7 +61,7 @@ const SideCanvas = () => {
 
   useEffect(() => {
     const p5 = require("p5")
-    const sketch = new p5(p => {
+    new p5(p => {
       p.setup = () => setup(p, ref.current)
       p.draw = () => draw(p)
       p.windowResized = () => {

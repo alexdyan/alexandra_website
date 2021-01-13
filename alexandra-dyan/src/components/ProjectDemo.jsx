@@ -42,11 +42,7 @@ function ProjectDemo({ name, description, children, link, linkCaption }) {
       <h1>{name}</h1>
       <Media>{children}</Media>
       <p>{description}</p>
-      {link && (
-        <a href={link} target="_blank">
-          {linkCaption}
-        </a>
-      )}
+      {link && <a href={link}>{linkCaption}</a>}
 
       {/* extra space before the footer */}
       <div style={{ height: "5vh" }}></div>
