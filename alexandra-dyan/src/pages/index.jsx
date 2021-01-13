@@ -2,7 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import SideCanvas from "../components/SideCanvas"
 import { Link as RouterLink } from "gatsby"
-import Theme from "../components/Theme"
+import { SEO } from "../components/seo"
 const Container = styled.div`
   width: 100%;
   height: 100%;
@@ -106,23 +106,22 @@ const Link = styled(RouterLink)`
 
 function Home() {
   return (
-    <Theme>
-      <Container className="Home">
-        <Content>
-          <h1>
-            Alexandra
-            <br />
-            D'Yan
-          </h1>
-          <LinkContainer>
-            <Link to="/portfolio">Projects</Link>
-            <br />
-            <Link to="/about">About</Link>
-          </LinkContainer>
-        </Content>
-        <SideCanvas />
-      </Container>
-    </Theme>
+    <Container className="Home">
+      <SEO title="Home" />
+      <Content>
+        <h1>
+          Alexandra
+          <br />
+          D'Yan
+        </h1>
+        <LinkContainer>
+          <Link to="/portfolio">Projects</Link>
+          <br />
+          <Link to="/about">About</Link>
+        </LinkContainer>
+      </Content>
+      <SideCanvas />
+    </Container>
   )
 }
 

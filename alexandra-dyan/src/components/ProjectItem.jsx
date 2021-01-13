@@ -46,12 +46,14 @@ const Container = styled(Link)`
   }
 `
 
-function ProjectItem({ name, imageSrc, youtubeId }) {
+function ProjectItem({ name, imageSrc, youtubeLink }) {
   const getImage = () => {
     if (imageSrc) {
       return imageSrc
     } else {
-      return `https://img.youtube.com/vi/${youtubeId}/0.jpeg`
+      const regex = /v=(.+)/
+      const youtubeId = regex.exec(youtubeLink)[1] // execute the regex on this string
+      return "https://img.youtube.com/vi/" + youtubeId + "/0.jpg"
     }
   }
 

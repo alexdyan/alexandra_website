@@ -62,7 +62,7 @@ function Header({ menuVisible, setMenuVisible }) {
 
   return (
     <Container className="Header">
-      <HomeIcon to="/home"></HomeIcon>
+      <HomeIcon to="/"></HomeIcon>
       <MenuIcon
         onClick={onClick}
         style={{
@@ -76,7 +76,7 @@ function Header({ menuVisible, setMenuVisible }) {
         <Link to="/portfolio" onClick={onClosePressed}>
           Projects
         </Link>
-        <Link to="/home" onClick={onClosePressed}>
+        <Link to="/" onClick={onClosePressed}>
           Home
         </Link>
         <Link to="/about" onClick={onClosePressed}>

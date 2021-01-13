@@ -3,6 +3,7 @@ import styled from "styled-components"
 import instagram from "../assets/images/instagram.svg"
 import linkedin from "../assets/images/linkedin.svg"
 import Layout from "../components/Layout"
+import { SEO } from "../components/seo"
 const Container = styled.div`
   width: 100%;
   height: 100%;
@@ -55,30 +56,33 @@ const SocialMediaButton = styled.a`
 
 function About() {
   return (
-    <Container className="About">
-      <h1>About</h1>
-      <p>
-        Alexandra is a graduate of the Music Technology program at New York
-        University. Her main interests, as well as career aspirations, include
-        creative coding and sound design. She also uploads digital art
-        experiments to her Instagram account in her free time, and enjoys
-        exploring the intersection of art and technology.
-      </p>
-      <div className="gap">
-        <SocialMediaButton
-          icon={instagram}
-          href="https://www.instagram.com/helloworld.alex/"
-        >
-          Instagram
-        </SocialMediaButton>
-        <SocialMediaButton
-          icon={linkedin}
-          href="https://www.linkedin.com/in/alexandra-dyan/"
-        >
-          LinkedIn
-        </SocialMediaButton>
-      </div>
-    </Container>
+    <Layout>
+      <SEO title="About" />
+      <Container className="About">
+        <h1>About</h1>
+        <p>
+          Alexandra is a graduate of the Music Technology program at New York
+          University. Her main interests, as well as career aspirations, include
+          creative coding and sound design. She also uploads digital art
+          experiments to her Instagram account in her free time, and enjoys
+          exploring the intersection of art and technology.
+        </p>
+        <div className="gap">
+          <SocialMediaButton
+            icon={instagram}
+            href="https://www.instagram.com/helloworld.alex/"
+          >
+            Instagram
+          </SocialMediaButton>
+          <SocialMediaButton
+            icon={linkedin}
+            href="https://www.linkedin.com/in/alexandra-dyan/"
+          >
+            LinkedIn
+          </SocialMediaButton>
+        </div>
+      </Container>
+    </Layout>
   )
 }
 

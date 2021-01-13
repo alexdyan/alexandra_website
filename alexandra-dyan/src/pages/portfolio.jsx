@@ -8,7 +8,7 @@ import soundGardenImg from "../assets/images/soundGarden.jpeg"
 import titsImg from "../assets/images/tits.jpeg"
 import ProjectItem from "../components/ProjectItem"
 import Layout from "../components/Layout"
-
+import { SEO } from "../components/seo"
 const Container = styled.div`
   /* dont make height 100% or else the footer position will get messed up */
   width: 100%;
@@ -45,18 +45,27 @@ const GridContainer = styled.div`
 
 function ProjectList() {
   return (
-    <Container className="ProjectList">
-      <h1>Projects</h1>
-      <GridContainer>
-        <ProjectItem name="Sound Garden" imageSrc={soundGardenImg} />
-        <ProjectItem name="Quarantine Quiz" imageSrc={quarantineQuizImg} />
-        <ProjectItem name="D'Lay Plug-In" youtubeId="k9tQWE3TW9U" />
-        <ProjectItem name="Sound Design" imageSrc={pepsiImg} />
-        <ProjectItem name="BlackBox" imageSrc={blackBoxImg} />
-        <ProjectItem name="Radio Dramas" imageSrc={titsImg} />
-        <ProjectItem name="Drum Pad Visualizer" youtubeId="-hEwV0057xE" />
-      </GridContainer>
-    </Container>
+    <Layout>
+      <SEO title="Portfolio" />
+      <Container className="ProjectList">
+        <h1>Projects</h1>
+        <GridContainer>
+          <ProjectItem name="Sound Garden" imageSrc={soundGardenImg} />
+          <ProjectItem name="Quarantine Quiz" imageSrc={quarantineQuizImg} />
+          <ProjectItem
+            name="D'Lay Plug-In"
+            youtubeLink="https://www.youtube.com/watch?v=ST_dPqxNdS8"
+          />
+          <ProjectItem name="Sound Design" imageSrc={pepsiImg} />
+          <ProjectItem name="BlackBox" imageSrc={blackBoxImg} />
+          <ProjectItem name="Radio Dramas" imageSrc={titsImg} />
+          <ProjectItem
+            name="Drum Pad Visualizer"
+            youtubeLink="https://www.youtube.com/watch?v=ST_dPqxNdS8"
+          />
+        </GridContainer>
+      </Container>
+    </Layout>
   )
 }
 
