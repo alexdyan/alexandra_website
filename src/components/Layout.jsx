@@ -61,7 +61,7 @@ function Layout({ children }) {
       <Footer>
         <p>
           Contact:<br></br>
-          ady239@nyu.edu | (973)-735-3093
+          ady239@nyu.edu
         </p>
       </Footer>
     </Container>
